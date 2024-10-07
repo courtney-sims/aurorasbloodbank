@@ -1,0 +1,9 @@
+name = "auroras-bloodbank"
+main = "src/worker.js"
+compatibility_date = "2024-10-02"
+workers_dev = true
+
+[[d1_databases]]
+binding = "DB"
+database_id = "82a496e7-6efe-4a68-b282-75c9b22dce74"
+database_name = "prod-auroras-bloodbank"
