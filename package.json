@@ -5,9 +5,14 @@
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev",
-    "start": "wrangler dev"
+    "start": "wrangler dev",
+    "build:worker": "cloudflare",
+    "dev:worker": "wrangler dev --port 8771",
+    "preview:worker": "npm run build:worker && npm run dev:worker",
+    "deploy:worker": "npm run build:worker && wrangler deploy
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^0.0.3",
     "wrangler": "^3.60.3"
   }
 }
