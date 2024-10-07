@@ -9,3 +9,7 @@ workers_dev = true
 binding = "DB"
 database_id = "82a496e7-6efe-4a68-b282-75c9b22dce74"
 database_name = "prod-auroras-bloodbank"
+
+[[kv_namespaces]]
+binding = "NEXT_CACHE_WORKERS_KV"
+id = "14982a585889447fbde09436470e37bb"
