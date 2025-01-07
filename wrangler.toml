@@ -16,3 +16,8 @@ assets = { directory = ".open-next/assets", binding = "ASSETS" }
 [[kv_namespaces]]
 binding = "NEXT_CACHE_WORKERS_KV"
 id = "2bbf1a06195e4faba6ca50b53f9062cf"
+
+[[d1_databases]]
+binding = "PROD_DB"
+database_name = "prod-auroras-bloodbank"
+database_id = "82a496e7-6efe-4a68-b282-75c9b22dce74"
