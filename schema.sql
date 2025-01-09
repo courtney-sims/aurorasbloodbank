@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS Cats;
+CREATE TABLE IF NOT EXISTS Cats (CatId INTEGER PRIMARY KEY, CatName TEXT NOT NULL, ReadyToDonate BOOLEAN NOT NULL);
+INSERT INTO Cats (CatId, CatName, ReadyToDonate) VALUES (1, 'Luna', 1), (2, "Aurora", 0);
