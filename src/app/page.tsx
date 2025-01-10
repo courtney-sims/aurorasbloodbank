@@ -11,7 +11,7 @@ export default function Home() {
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
+          {/* <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
@@ -26,7 +26,7 @@ export default function Home() {
               height={24}
               priority
             />
-          </a>
+          </a> */}
         </div>
       </div>
 
@@ -43,15 +43,8 @@ export default function Home() {
           src="/aurora.jpeg"
           width={768}
           height={1024}
-          className="hidden md:block"
           alt="Aurora, our inspiration"
-          />
-          <Image
-          src="/aurora.jpeg"
-          width={384}
-          height={512}
-          className="block md:hidden"
-          alt="Aurora, out inspiration"
+          priority
           />
       </div>
 
