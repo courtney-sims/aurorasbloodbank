@@ -1,14 +1,16 @@
+
 import { fetchReadyCats } from '@/app/lib/data';
-import { Baloo_Da_2 } from 'next/font/google';
+import CatDonationForm from '@/app/dashboard/ready-cats/ui/CatDonationForm'
 export default async function Page(){
-    const readyCats: string[] = await fetchReadyCats();
+    const readyCats: Record<string, unknown>[] = await fetchReadyCats();
+    console.log(readyCats.length)
     return (
         <>
             <p>Ready to donate:</p>
-            {/* <p>{print readyCats from the loop of cats returned in the data}</p> */}
-            {readyCats.map(function(cat: string){
-                return <p>{cat}</p>
+            {readyCats.map(function(cat, i){
+                return <CatDonationForm key={cat["CatId"]} id={cat["CatId"]} name={cat["CatName"]} lastDonated={cat["LastDonated"]}/>;
             })}
         </>
     )
 }
+
